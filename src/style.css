@@ -1,0 +1,39 @@
+body{
+    padding-top:90px;
+    padding-bottom: 20px;
+}
+
+.nav-link-red{
+    color: red;
+}
+
+.form-flex{
+    display: flex;
+    flex-direction: column;
+    height: 100% !important;
+}
+
+.form-row {
+    flex: 0 0 auto;
+}
+.last-row {
+    flex: 1;
+}
+
+.last-row.col{
+    height: 100%;
+}
+
+
+.blink {
+    animation-name: animation_blink;
+    animation-timing-function: ease-in;
+    animation-duration: 2s; 
+    animation-iteration-count: infinite;            
+}
+
+@keyframes animation_blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.1; }
+    100% { opacity: 1; }    
+}
