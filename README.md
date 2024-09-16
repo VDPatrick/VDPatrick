@@ -34,39 +34,47 @@ Funktionsbuttons Lehrer: "Wir sind unterwegs" <br>
 Funktionsbutton Lehrer: "Meldung bearbeiten", "Meldung abschließen" <br>
 
 Lehrer Button -> Meldung erstellen
-Standort (Dropdown)	Raumnummer (Dropdown)	Teams benötigt (Dropdown)	Beschreibung
+<table style="width:100%">
+  <tr>
+    <th>Standort (Dropdown)</th>
+    <th>Raumnummer (Dropdown)</th>
+    <th>Teams benötigt (Dropdown)</th>
+    <th>Beschreibung</th>
+  </tr>
+</table>
 
 ### Push Notification an Sanitäter
-Benachrichtigung "Sanitäter benötigt"
--Standort anzeigen
+Benachrichtigung "Sanitäter benötigt" <br>
+-Standort anzeigen <br>
 
 
 # Beschreibung
 
 Im Login können sich Lehrer und Sanitäter mit einem vom Admin generierten Account anmelden. Nach erfolgreicher Anmeldung wird man auf das Dashboard weitergeleitet.
-
-Das Dashboard sieht ja nach Account-Typ unterschiedlich aus, es beinhaltet eine Liste der aktuellen Meldungen. Eine Meldung beinhaltet folgendes:
--Zeit der Erstellung
--Standort
--Beschreibung
--Name des Erstellers
--Anzahl benötigter Teams
--Button: "Wir sind unterwegs" (SANITÄTER)
--Button: "Meldung bearbeiten" (LEHRER)
--Button: "Meldung abschließen" (LEHRER)
-
+<br>
+Das Dashboard sieht ja nach Account-Typ unterschiedlich aus, es beinhaltet eine Liste der aktuellen Meldungen. Eine Meldung beinhaltet folgendes: <br>
+-Zeit der Erstellung <br>
+-Standort <br>
+-Beschreibung <br>
+-Name des Erstellers <br>
+-Anzahl benötigter Teams <br>
+-Button: "Wir sind unterwegs" (SANITÄTER) <br>
+-Button: "Meldung bearbeiten" (LEHRER) <br>
+-Button: "Meldung abschließen" (LEHRER) <br>
+<br>
 Eine erstellte Meldung wird vorerst als rot angezeigt.
-
+<br>
 Wenn Sanitäter den Button "Wir sind unterwegs" klicken, ändert sich der Status der Meldung auf grün.
-
+<br>
 Wenn Lehrer auf den Button "Meldung bearbeiten" klicken, können sie die Daten der Meldung abändern, diese werden in der Liste aktualisiert.
-
+<br>
 Wenn Lehrer auf den Button "Meldung abschließen" klicken, wird die Meldung ausgegraut.
-
-Wenn Lehrer auf den Button "Meldung erstellen" klicken, öffnet sich eine Eingabemaske, in der die Meldung erstellt werden kann, folgende Dinge werden eingegeben:
--Standort (Dropdown)
--Raumnummer (Dropdown)
--Beschreibung (Textbox)
--Anzahl benötigter Teams (Dropdown)
-
+<br>
+Wenn Lehrer auf den Button "Meldung erstellen" klicken, öffnet sich eine Eingabemaske, in der die Meldung erstellt werden kann, folgende Dinge werden eingegeben:<br>
+-Standort (Dropdown)<br>
+-Raumnummer (Dropdown)<br>
+-Beschreibung (Textbox)<br>
+-Anzahl benötigter Teams (Dropdown)<br>
+<br>
 Beim Erstellen einer neuen Meldung wird automatisch eine Push-Notification mit dem Standort an alle verfügbaren Sanitäter gesendet.
+<br>
