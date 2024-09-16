@@ -1,5 +1,5 @@
 # Haspel-SSD
-Webapp zur Absprache zwischen Lehrern und Sanitätern
+Mockup für eine Webapp zur Absprache zwischen Lehrern und Sanitätern am BK Haspel
 
 # Anforderungen
 Nutzer sollen sich mit vorgeneriertem User anmelden.
