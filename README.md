@@ -3,26 +3,35 @@ Mockup für eine Webapp zur Absprache zwischen Lehrern und Sanitätern am BK Has
 
 # Anforderungen
 Nutzer sollen sich mit vorgeneriertem User anmelden. <br>
-Es sollen Meldungen von Lehrern erstellt werden.
-Meldungen sollen als Push Notification bei Sanitätern erscheinen.
-Sanitäter sollen sich zum Dienst melden können.
-Sanitäter sollen sich einer Meldung zuordenen können ("Wir sind unterwegs").
-Lehrer sollen Meldungen bearbeiten und abschließen können.
-Es sollen keine personenbezogenen Daten gespeichert/angezeigt werden.
-Gegen doppeltes Versenden und Unfug absichern.
-Es soll eine Admin-Page zum Verwalten von Accounts geben.
+Es sollen Meldungen von Lehrern erstellt werden. <br>
+Meldungen sollen als Push Notification bei Sanitätern erscheinen. <br>
+Sanitäter sollen sich zum Dienst melden können. <br>
+Sanitäter sollen sich einer Meldung zuordenen können ("Wir sind unterwegs"). <br>
+Lehrer sollen Meldungen bearbeiten und abschließen können. <br>
+Es sollen keine personenbezogenen Daten gespeichert/angezeigt werden. <br>
+Gegen doppeltes Versenden und Unfug absichern. <br>
+Es soll eine Admin-Page zum Verwalten von Accounts geben. <br>
 
 # Elemente / Pages
 
 ### Login
-Username eingeben
-Passwort eingeben
+Username eingeben <br>
+Passwort eingeben <br>
 
 ### Dashboard (Übersicht aller Anfragen + Teams)
 Liste aller Meldungen (rot = aktiv, grün = unterwegs, grau = inaktiv)
-Zeit	Standort	Beschreibung	Name Ersteller	Benötigte Teams	Funktionsbuttons
-Funktionsbuttons Lehrer: "Wir sind unterwegs"
-Funktionsbutton Lehrer: "Meldung bearbeiten", "Meldung abschließen"
+<table style="width:100%">
+  <tr>
+    <th>Zeit</th>
+    <th>Standort</th>
+    <th>Beschreibung</th>
+    <th>Name Ersteller</th>
+    <th>Benötigte Teams</th>
+    <th>Funktionsbuttons</th>
+  </tr>
+</table>
+Funktionsbuttons Lehrer: "Wir sind unterwegs" <br>
+Funktionsbutton Lehrer: "Meldung bearbeiten", "Meldung abschließen" <br>
 
 Lehrer Button -> Meldung erstellen
 Standort (Dropdown)	Raumnummer (Dropdown)	Teams benötigt (Dropdown)	Beschreibung
