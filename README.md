@@ -2,7 +2,7 @@
 Mockup für eine Webapp zur Absprache zwischen Lehrern und Sanitätern am BK Haspel
 
 # Anforderungen
-Nutzer sollen sich mit vorgeneriertem User anmelden.
+Nutzer sollen sich mit vorgeneriertem User anmelden. <br>
 Es sollen Meldungen von Lehrern erstellt werden.
 Meldungen sollen als Push Notification bei Sanitätern erscheinen.
 Sanitäter sollen sich zum Dienst melden können.
