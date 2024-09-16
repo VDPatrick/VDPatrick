@@ -78,3 +78,7 @@ Wenn Lehrer auf den Button "Meldung erstellen" klicken, öffnet sich eine Eingab
 <br>
 Beim Erstellen einer neuen Meldung wird automatisch eine Push-Notification mit dem Standort an alle verfügbaren Sanitäter gesendet.
 <br>
+
+# Klassendiagramm
+
+![Alt text](images/Webapp-Klassendiagramm.jpg)
