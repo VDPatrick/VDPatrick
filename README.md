@@ -1,7 +1,7 @@
 # Haspel-SSD
 Webapp zur Absprache zwischen Lehrern und Sanitätern
 
-## Anforderungen
+# Anforderungen
 Nutzer sollen sich mit vorgeneriertem User anmelden.
 Es sollen Meldungen von Lehrern erstellt werden.
 Meldungen sollen als Push Notification bei Sanitätern erscheinen.
@@ -12,7 +12,7 @@ Es sollen keine personenbezogenen Daten gespeichert/angezeigt werden.
 Gegen doppeltes Versenden und Unfug absichern.
 Es soll eine Admin-Page zum Verwalten von Accounts geben.
 
-## Elemente / Pages
+# Elemente / Pages
 
 ### Login
 Username eingeben
@@ -32,7 +32,7 @@ Benachrichtigung "Sanitäter benötigt"
 -Standort anzeigen
 
 
-## Beschreibung
+# Beschreibung
 
 Im Login können sich Lehrer und Sanitäter mit einem vom Admin generierten Account anmelden. Nach erfolgreicher Anmeldung wird man auf das Dashboard weitergeleitet.
 
