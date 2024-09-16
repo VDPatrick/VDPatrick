@@ -81,4 +81,4 @@ Beim Erstellen einer neuen Meldung wird automatisch eine Push-Notification mit d
 
 # Klassendiagramm
 
-![Alt text](images/Webapp-Klassendiagramm.jpg)
+![Klassendiagramm](images/Webapp-Klassendiagramm.jpg)
