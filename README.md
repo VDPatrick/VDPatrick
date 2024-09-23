@@ -30,7 +30,7 @@ Liste aller Meldungen (rot = aktiv, grün = unterwegs, grau = inaktiv)
     <th>Funktionsbuttons</th>
   </tr>
 </table>
-Funktionsbuttons Lehrer: "Wir sind unterwegs" <br>
+Funktionsbutton Sanitäter: "Wir sind unterwegs" <br>
 Funktionsbutton Lehrer: "Meldung bearbeiten", "Meldung abschließen" <br>
 
 Lehrer Button -> Meldung erstellen
@@ -47,6 +47,13 @@ Lehrer Button -> Meldung erstellen
 Benachrichtigung "Sanitäter benötigt" <br>
 -Standort anzeigen <br>
 
+### Admin Dashboard
+Liste aller Nutzer (Name + Rolle + Status) <br>
+Neue Nutzer anlegen <br>
+Nutzer verwalten (Änderungen von Name + Rolle) <br>
+Passwort von Nutzer zurücksetzen <br>
+Historie aller Meldungen + Statusänderungen <br>
+Exportieren der Historie als PDF <br>
 
 # Beschreibung
 
