@@ -12,6 +12,43 @@
     <nav class="navbar bg-body-tertiary fixed-top fs-4">
         <div class="container-fluid">
           <a class="navbar-brand fs-2" href="#">Haspel SSD</a>
+            <div class="dropdown">
+                <button class="me-2 userMenu" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside"><i class="bi bi-person"></i></button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                        <div class="row justify-content-center">
+                            <div class="col-auto">
+                                <i class="bi bi-person fs-1"></i>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-auto">
+                                <span class="fs-6 text-secondary">user1</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mt-4">
+                        <div class="dropdown-item">
+                            <div class="form-check form-switch ps-0">
+                                <div class="row">
+                                    <div class="col">
+                                        <label class="form-check-label float-start" for="flexSwitchCheckDefault">
+                                            <span class="align-middle"><i class="bi bi-person-check fs-5 me-1"></i></span>
+                                            <span class="align-middle">Aktiv</span>
+                                        </label>
+                                    </div>
+                                    <div class="col my-auto">
+
+                                            <input class="form-check-input ms-0 float-end mt-0" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                    
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mt-2"><a class="dropdown-item text-danger" href="#"><span class="h-100 align-middle"><i class="bi bi-box-arrow-right fs-5"></i> </span><span class="align-middle">Abmelden</span></a></li>
+                  </ul>
+            </div>
         </div>
     </nav>
     <div class="container fs-5 h-100">
@@ -31,7 +68,7 @@
                     <div class="card-body">
                        
                     </div>
-                    <div class="card-footer">
+                    <div class="card-footer" id="lastUpdate">
                       <i>zuletzt aktualisiert</i>
                     </div>
                   </div>
@@ -80,12 +117,12 @@
                         <div class="row form-row">
                             <div class="col">
                                 <div class="form-floating mt-2">
-                                    <select class="form-select" id="selectRaum">
-                                        <option selected>1</option>
-                                        <option>2</option>
-                                    </select> 
-                                    <label for="selectRaum">Benötigte Teams</label> 
+                                        <input class="form-control" type="number" min="1" id="amountSanis"/> 
+                                        <label for="amountSanis">Benötigte Sanis</label> 
                                 </div>
+                            </div>
+                            <div class="col-auto mt-2 ps-0">
+                                <button class="btn btn-light h-100 w-auto" onclick="manfClicked()" type="button" id="btnManf">MANF</button>
                             </div>
                         </div>
                         <div class="row last-row">
@@ -109,5 +146,32 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script>
+        window.onload += myFunction();
+
+        function myFunction(){
+            var newDate = new Date();
+            var datetime = "<i>zuletzt aktualisiert am " + newDate.getDate() +"."+newDate.getMonth()+"."+newDate.getFullYear() + " um " +newDate.getHours() + ":" + newDate.getMinutes() + "</i>";
+            document.getElementById("lastUpdate").innerHTML = datetime;
+
+        }
+
+        function manfClicked(){
+            let inputSanis = document.getElementById("amountSanis");
+            let btnManf = document.getElementById("btnManf");
+
+            if(inputSanis.hasAttribute("disabled")){
+                inputSanis.removeAttribute("disabled");
+                btnManf.className = "btn btn-light h-100 w-auto";
+
+            }
+            else{
+                inputSanis.setAttribute("disabled", "true");
+                btnManf.className = "btn btn-dark h-100 w-auto";
+            }
+           
+
+        }
+    </script>
 </body>
 </html>
