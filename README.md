@@ -40,7 +40,7 @@ Funktionsbutton Lehrer: "Meldung bearbeiten", "Meldung abschließen" <br>
     <th>Standort (Dropdown)</th>
     <th>Raumnummer (Dropdown)</th>
     <th>Teams benötigt (Dropdown)</th>
-    <th>Button: Alle Sanitäter rufen</th>
+    <th>Alle Sanitäter rufen (Button)</th>
   </tr>
 </table>
 
