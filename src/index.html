@@ -153,7 +153,7 @@
                             </div>
                         </div>
                         <div class="row last-row" id="last-row-text">
-                            <div class="col">
+                            <div class="col h-100">
                                 <div class="form-floating mt-2 h-100">
                                     <textarea class="form-control h-100" id="textDescription"></textarea>
                                     <label for="textDescription">Beschreibung</label>
@@ -165,7 +165,7 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btnAbbrechen">Abbrechen</button>
-              <button type="button" class="btn btn-outline-danger" id="btnMeldungAufgeben">Meldung aufgeben</button>
+              <button type="button" class="btn btn-outline-danger" id="btnMeldungAufgeben" onclick="btnSubmitted()" >Meldung aufgeben</button>
               <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal" id="btnMeldungSpeichern">Meldung speichern</button>
             </div>
           </div>
@@ -206,21 +206,39 @@
             let inputSanis = document.getElementById("amountSanis");
             let btnManf = document.getElementById("btnManf");
             let lastrowtext = document.getElementById("last-row-text");
-            let btnSpeichern = document.getElementById("btnMeldungSpeichern");
+            let inputText = document.getElementById("textDescription")
+
+            let btnMeldungAufgeben = document.getElementById("btnMeldungAufgeben");
+            let btnMeldungSpeichern = document.getElementById("btnMeldungSpeichern");
             
             if(inputSanis.hasAttribute("disabled")){
                 inputSanis.removeAttribute("disabled");
                 btnManf.className = "btn btn-light h-100 w-auto";
             }
+
             if(fullmode === false){
                 lastrowtext.style.display = "none";
-                btnSpeichern.style.display = "none";
+                btnMeldungAufgeben.style.display = "inline";
+                btnMeldungSpeichern.style.display = "none";
             }
             else{
                 lastrowtext.style.display = "inline"
-                btnSpeichern.style.display = "inline";
+                btnMeldungAufgeben.style.display = "inline";
+                btnMeldungSpeichern.style.display = "none";
             }
+
+            inputText.value ="";
          
+        }
+
+        function btnSubmitted(){
+            let lastrowtext = document.getElementById("last-row-text");
+            let btnMeldungAufgeben = document.getElementById("btnMeldungAufgeben");
+            let btnMeldungSpeichern = document.getElementById("btnMeldungSpeichern");
+
+            lastrowtext.style.display = "inline";
+            btnMeldungAufgeben.style.display = "none";
+            btnMeldungSpeichern.style.display = "inline";
         }
 
     </script>
