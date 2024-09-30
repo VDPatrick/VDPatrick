@@ -69,6 +69,7 @@ Exportieren der Historie als PDF <br>
 Im Login können sich Lehrer und Sanitäter mit einem vom Admin generierten Account anmelden. Nach erfolgreicher Anmeldung wird man auf das Dashboard weitergeleitet.
 <br>
 Das Dashboard sieht ja nach Account-Typ unterschiedlich aus. Es beinhaltet eine Liste der aktuellen Meldungen, den Zeitpunkt der letzten Aktualisierung, ein User Control Pop-Up und für Lehrer einen Button zum Erstellen neuer Meldungen. <br>
+<br>
 Eine Meldung in der Liste beinhaltet folgendes: <br>
 -Zeit der Erstellung <br>
 -Standort <br>
@@ -92,6 +93,7 @@ Wenn Lehrer auf den Button "Meldung erstellen" klicken, öffnet sich eine Eingab
 Nach dem Erstellen wird die (unfertige) Meldung zwar schon abgeschickt aber auch farblich vorgehoben, bis der Lehrer eine Beschreibung eingegeben hat. <br>
 <br>
 Beim Erstellen einer neuen Meldung wird automatisch eine Push-Notification mit dem Standort an alle verfügbaren Sanitäter gesendet. <br>
+<br>
 Für Admins gibt es ein extra Dashboard zum Verwalten und Erstellen von User-Accounts. <br>
 
 # Klassendiagramm
