@@ -20,6 +20,7 @@ Passwort eingeben <br>
 
 ### Dashboard (Übersicht aller Anfragen + Teams)
 Button Lehrer: "Meldung erstellen" <br>
+Zeitpunkt der letzten Aktualisierung wird unter der Liste angezeigt <br><br>
 Liste aller Meldungen (rot = aktiv, gelb = keine Beschreibung, grün = unterwegs, grau = inaktiv)
 <table style="width:100%">
   <tr>
@@ -67,7 +68,8 @@ Exportieren der Historie als PDF <br>
 
 Im Login können sich Lehrer und Sanitäter mit einem vom Admin generierten Account anmelden. Nach erfolgreicher Anmeldung wird man auf das Dashboard weitergeleitet.
 <br>
-Das Dashboard sieht ja nach Account-Typ unterschiedlich aus, es beinhaltet eine Liste der aktuellen Meldungen. Eine Meldung beinhaltet folgendes: <br>
+Das Dashboard sieht ja nach Account-Typ unterschiedlich aus. Es beinhaltet eine Liste der aktuellen Meldungen, den Zeitpunkt der letzten Aktualisierung, ein User Control Pop-Up und für Lehrer einen Button zum Erstellen neuer Meldungen. <br>
+Eine Meldung in der Liste beinhaltet folgendes: <br>
 -Zeit der Erstellung <br>
 -Standort <br>
 -Beschreibung <br>
@@ -77,22 +79,20 @@ Das Dashboard sieht ja nach Account-Typ unterschiedlich aus, es beinhaltet eine 
 -Button: "Meldung bearbeiten" (LEHRER) <br>
 -Button: "Meldung abschließen" (LEHRER) <br>
 <br>
-Eine erstellte Meldung wird vorerst als rot angezeigt.
-<br>
-Wenn Sanitäter den Button "Wir sind unterwegs" klicken, ändert sich der Status der Meldung auf grün.
-<br>
-Wenn Lehrer auf den Button "Meldung bearbeiten" klicken, können sie die Daten der Meldung abändern, diese werden in der Liste aktualisiert.
-<br>
-Wenn Lehrer auf den Button "Meldung abschließen" klicken, wird die Meldung ausgegraut.
+Eine erstellte Meldung wird vorerst als rot angezeigt. <br>
+Wenn Sanitäter den Button "Wir sind unterwegs" klicken, ändert sich der Status der Meldung auf grün. <br>
+Wenn Lehrer auf den Button "Meldung bearbeiten" klicken, können sie die Daten der Meldung abändern, diese werden in der Liste aktualisiert. <br>
+Wenn Lehrer auf den Button "Meldung abschließen" klicken, wird die Meldung ausgegraut. <br>
 <br>
 Wenn Lehrer auf den Button "Meldung erstellen" klicken, öffnet sich eine Eingabemaske, in der die Meldung erstellt werden kann, folgende Dinge werden eingegeben:<br>
 -Standort (Dropdown)<br>
 -Raumnummer (Dropdown)<br>
--Beschreibung (Textbox)<br>
--Anzahl benötigter Teams (Dropdown)<br>
+-Anzahl benötigter Teams (Dropdown) <br>
 <br>
-Beim Erstellen einer neuen Meldung wird automatisch eine Push-Notification mit dem Standort an alle verfügbaren Sanitäter gesendet.
+Nach dem Erstellen wird die (unfertige) Meldung zwar schon abgeschickt aber auch farblich vorgehoben, bis der Lehrer eine Beschreibung eingegeben hat. <br>
 <br>
+Beim Erstellen einer neuen Meldung wird automatisch eine Push-Notification mit dem Standort an alle verfügbaren Sanitäter gesendet. <br>
+Für Admins gibt es ein extra Dashboard zum Verwalten und Erstellen von User-Accounts. <br>
 
 # Klassendiagramm
 
