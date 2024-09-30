@@ -19,7 +19,8 @@ Username eingeben <br>
 Passwort eingeben <br>
 
 ### Dashboard (Übersicht aller Anfragen + Teams)
-Liste aller Meldungen (rot = aktiv, grün = unterwegs, grau = inaktiv)
+Button Lehrer: "Meldung erstellen" <br>
+Liste aller Meldungen (rot = aktiv, gelb = keine Beschreibung, grün = unterwegs, grau = inaktiv)
 <table style="width:100%">
   <tr>
     <th>Zeit</th>
@@ -33,15 +34,21 @@ Liste aller Meldungen (rot = aktiv, grün = unterwegs, grau = inaktiv)
 Funktionsbutton Sanitäter: "Wir sind unterwegs" <br>
 Funktionsbutton Lehrer: "Meldung bearbeiten", "Meldung abschließen" <br>
 
-Lehrer Button -> Meldung erstellen
+### Meldung erstellen
 <table style="width:100%">
   <tr>
     <th>Standort (Dropdown)</th>
     <th>Raumnummer (Dropdown)</th>
     <th>Teams benötigt (Dropdown)</th>
-    <th>Beschreibung</th>
   </tr>
 </table>
+
+### User Control Pop-Up
+Kleines Fenster oben rechts, öffnet sich durch Klicken <br>
+Kleines "Profilbild" anzeigen <br>
+Nutzernamen anzeigen <br>
+Logout Button <br>
+Slider Sanitäter: Status steuern (aktiv / inaktiv) <br>
 
 ### Push Notification an Sanitäter
 Benachrichtigung "Sanitäter benötigt" <br>
