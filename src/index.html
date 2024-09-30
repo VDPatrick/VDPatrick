@@ -61,12 +61,39 @@
                                 Meldungen
                             </div>
                            <div class="col-auto">
-                            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-plus-square"></i></button>
+                            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="refreshDialog(false)"><i class="bi bi-plus-square"></i></button>
                            </div>
                         </div>
                     </div>
                     <div class="card-body">
-                       
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <th>
+                                    </th>
+                                    <th>
+                                        Zeitpunkt
+                                    </th>
+                                    <th>
+                                        Ort
+                                    </th>
+                                    <th>
+                                        Angefordert
+                                    </th>
+                                    <th style="width: 100%;">
+                                        Beschreibung
+                                    </th>
+                                    <th>
+                                        Admin
+                                    </th>
+                                </thead>
+                                <tr>
+                                    <td>
+
+                                    </td>
+                                </tr>
+                            </table>
+                          </div>
                     </div>
                     <div class="card-footer" id="lastUpdate">
                       <i>zuletzt aktualisiert</i>
@@ -78,7 +105,7 @@
 
 
     <div class="modal modal-lg fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog h-75">
+        <div class="modal-dialog" style="height: 90%">
           <div class="modal-content h-100">
             <div class="modal-header">
               <h1 class="modal-title fs-5" id="exampleModalLabel">
@@ -125,7 +152,7 @@
                                 <button class="btn btn-light h-100 w-auto" onclick="manfClicked()" type="button" id="btnManf">MANF</button>
                             </div>
                         </div>
-                        <div class="row last-row">
+                        <div class="row last-row" id="last-row-text">
                             <div class="col">
                                 <div class="form-floating mt-2 h-100">
                                     <textarea class="form-control h-100" id="textDescription"></textarea>
@@ -137,8 +164,9 @@
                 </form>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Abbrechen</button>
-              <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Meldung aufgeben</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btnAbbrechen">Abbrechen</button>
+              <button type="button" class="btn btn-outline-danger" id="btnMeldungAufgeben">Meldung aufgeben</button>
+              <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal" id="btnMeldungSpeichern">Meldung speichern</button>
             </div>
           </div>
         </div>
@@ -172,6 +200,29 @@
            
 
         }
+
+        function refreshDialog(fullmode){
+
+            let inputSanis = document.getElementById("amountSanis");
+            let btnManf = document.getElementById("btnManf");
+            let lastrowtext = document.getElementById("last-row-text");
+            let btnSpeichern = document.getElementById("btnMeldungSpeichern");
+            
+            if(inputSanis.hasAttribute("disabled")){
+                inputSanis.removeAttribute("disabled");
+                btnManf.className = "btn btn-light h-100 w-auto";
+            }
+            if(fullmode === false){
+                lastrowtext.style.display = "none";
+                btnSpeichern.style.display = "none";
+            }
+            else{
+                lastrowtext.style.display = "inline"
+                btnSpeichern.style.display = "inline";
+            }
+         
+        }
+
     </script>
 </body>
 </html>
