@@ -89,7 +89,42 @@
                                 </thead>
                                 <tr>
                                     <td>
-
+                                        <span class="h-100 align-middle"><i class="bi bi-record-fill fs-3" style="color:red"></i></span>
+                                    </td>
+                                    <td>
+                                        <span class="h-100 align-middle" id="firstMeldung"></span>
+                                    </td>
+                                    <td>
+                                        <span class="h-100 align-middle">209</span>
+                                    </td>
+                                    <td>
+                                        <span class="h-100 align-middle">4</span>
+                                    </td>
+                                    <td>
+                                        <span class="h-100 align-middle">Schüler hat Nase gebrochen </span>
+                                    </td>
+                                    <td>
+                                        <span class="h-100 align-middle"><button type="button" class="btn btn-secondary">Editieren</button></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="h-100 align-middle"><i class="bi bi-record-fill fs-3" style="color:greenyellow"></i></span>
+                                    </td>
+                                    <td>
+                                        <span class="h-100 align-middle" id="secondMeldung"></span>
+                                    </td>
+                                    <td>
+                                        <span class="h-100 align-middle">208</span>
+                                    </td>
+                                    <td>
+                                        <span class="h-100 align-middle">2</span>
+                                    </td>
+                                    <td>
+                                        <span class="h-100 align-middle">Schüler ist gestolpert </span>
+                                    </td>
+                                    <td>
+                                        
                                     </td>
                                 </tr>
                             </table>
@@ -179,8 +214,13 @@
 
         function myFunction(){
             var newDate = new Date();
-            var datetime = "<i>zuletzt aktualisiert am " + newDate.getDate() +"."+newDate.getMonth()+"."+newDate.getFullYear() + " um " +newDate.getHours() + ":" + newDate.getMinutes() + "</i>";
+            var datetime = "<i>zuletzt aktualisiert am " + newDate.getDate() +"."+newDate.getMonth()+"."+newDate.getFullYear() + " um " +newDate.getHours() + ":" + newDate.getMinutes().toString().padStart(2, '0') + "</i>";
+            var seceondTime = newDate.getHours() + ":" + newDate.getMinutes().toString().padStart(2, '0');;
+            var thirdTime = newDate.getHours() - 2 + ":" + newDate.getMinutes().toString().padStart(2, '0');;
             document.getElementById("lastUpdate").innerHTML = datetime;
+            document.getElementById("firstMeldung").innerHTML = seceondTime;
+            document.getElementById("secondMeldung").innerHTML = thirdTime;
+
 
         }
 
